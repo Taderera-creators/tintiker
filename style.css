@@ -31,9 +31,10 @@ body a{
 .container::-webkit-scrollbar{
     display:none;
 }
+
 .nav-top{
     top: 0%;
-    width: 100%;
+    width: 95%;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
@@ -52,11 +53,15 @@ body a{
 }
 
 .nav-btns{
-    margin-right: 5rem;
+    display: flex;
+    
+
 }
+    
 .nav-btns a:hover,.active{
     color: var(--main-color);
 }
+
 .nav-btns a{
     font-weight: 600;
     font-size: medium;
@@ -64,34 +69,56 @@ body a{
 
 
 }
+
 .headings{
-    margin-top: 10rem;
-    margin-left: 5rem;
-    max-width: 50%;
+    margin-top: 2%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+}
+.heading-title{
+    max-width: 45%;
+
+
+}
+.title{
+    color: white;
 }
 .profile-heading{
     font-size: 2rem;
+    max-width: 50%;
 
 
 }
+
+#menuBtn{
+    display: none;
+}
+
 .home{
-    height: 200vh;
+    
+    background-image: url(background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
 
 }
 .background-img {
-    top: 10rem;
-    left: 4.5rem;
+
     position: relative;
-    width: 400px;
-    height: 80vh;
+    width: 300px;
+    height: 70vh;
     opacity: 0.9;
-    background-image: url(background.png);
+
+    background-image: url(tinkel.png);
     background-position: center;
-    background-size: cover;
-    opacity: 0.4;
+    background-size: 55vh;
+    background-repeat: no-repeat;
+    opacity: 1;
     transition: 3s;
 }
 .background-img:hover{
@@ -99,7 +126,10 @@ body a{
     transition: 3s;
 
 }
-
+.img-wrapper{
+    display: flex;
+    align-items: center;
+}
 
 .background-img img{
     border-radius:20px ;
@@ -110,10 +140,55 @@ body a{
 
 
 }
+.about-company{
+
+    background-color:var(--bg-color) ;
+    padding: 10px;
+    margin-left: 5%;
+    border-top-left-radius  : 10px;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius:10px;
+}
+.about-company-2{
+    margin-top: 20px;
+    margin-left: 10%;
+    background-color:  var(--bg-color);
+    padding: 10px;
+
+    border-top-left-radius  : 10px;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius:10px;
+
+
+}
+.qoutes-wrapper{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 70%;
+
+
+}
+.company-quotes-2{
+    margin-top: 10px;
+    padding: 10px;
+    border-top-left-radius  : 10px;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius:10px;
+    background-color: red;
+    row-gap: 10px;
+
+}
+#about-company{
+    font-style: italic;
+}
 .text-animate{
     font-size: 1.2rem;
     font-weight: 700;
-    color: transparent;
+    color: var(--bg-color);
+
     -webkit-text-stroke: .7px var(--main-color);
 }
 
@@ -171,8 +246,17 @@ body a{
 
 
 .about{
-    height: 200vh;
+
     background-color:var(--bg-color);
+    padding-top: .1rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.values{
+    
+    
+    background-color:var(--second-bg-color);
     padding-top: .1rem;
     font-size: 1.5rem;
     text-align: center;
@@ -186,47 +270,21 @@ span{
 }
 
 .about-img img{
-    width: 93%;
-    height: 93%;
-    border-radius: 50%;
-    border:.2rem solid var(--main-color);
+    height: 150px;
+     width: 300px;
 
 }
+
 .about-img{
-    align-items: center;
-    margin:.1rem 0 ;
-    margin-left: 50%;
+    justify-content: center;
+}
+
+.location,.call,.email{
     display: flex;
     justify-content: center;
-    border-radius: 50%;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform: translate(-50%);
-
-}
-.about-img .circle-spin{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%)rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    border-top:.2rem solid var(--second-bg-color);
-    border-bottom:.2rem solid var(--second-bg-color) ;
-    border-left: .2rem solid var(--main-color) ;
-    border-right:.2rem solid var(--main-color) }
-
-.location{
-    margin-left: 40%;
-    display: flex;
-    font-size: medium;
-}
-
-.location img{
-    width: 20px;
-    margin-right: 5px;
+    padding:0 0 10px 10px ;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -234,15 +292,17 @@ span{
     text-align: center;
     justify-content: center;
     background: var(--second-bg-color);
-    height: 400vh;
 
 }
+
 .service-heading{
     padding-top: .1rem;
 }
+
 .services .row{
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    padding: 2%;
+    
 }
 
 .column{
@@ -250,17 +310,27 @@ span{
     flex-wrap: wrap;
     position: relative;
     width: 40%;
-    max-width: 40%;
+    max-width: 95%;
     margin-bottom: 2rem;
     border:.2rem solid var(--main-color);
     z-index: 1;
+}
+.column-contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#column-image{
+    width: 130px;
+    height: 100px;
+    border-radius: 10%;
+    margin: 2%;
 }
 .lastColumn{
     
     flex-wrap: wrap;
     position: relative;
-    width: 90%;
-    max-width: 90%;
+    max-width: 95%;
     margin-bottom: 2rem;
     border:.2rem solid var(--main-color);
     z-index: 1;
@@ -389,20 +459,9 @@ span{
 }
 
 
-.footer-links{
-    z-index: -2;
-    display: flex;
-    height: 1rem;
-    position: relative;
-    z-index: 3;
-    padding-left: 4px;
-    background: var(--bg-color);
-    bottom:0rem;
-    
+.footer p{
+    font-style: italic;
 
-
-
-    
 
 }
 .home-links{
@@ -428,4 +487,100 @@ span{
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: small;
+}
+@media (min-width:1000px) {
+    .services .row{
+    
+    display: flex;
+    justify-content: space-around;
+    }
+
+
+
+    
+}
+@media (max-width:900px) {
+    
+.nav-top{
+    top: 0%;
+    width: 95%;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    position: fixed;
+    padding: 0.5rem 10px;
+    height: 2rem;
+    z-index: 100;
+}
+
+.nav-btns{
+    display: none;
+
+    flex-direction: column;
+    right: 7%;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    max-width: 70px;
+    position: absolute;
+    background-color: var(--bg-color);
+    
+
+}
+
+#menuBtn{
+    display: block;
+    margin-right: 7%;
+}
+
+.nav-btns a{
+    font-weight: 600;
+    font-size: medium;
+    padding: 2%;
+
+
+}
+
+    .background-img{
+        
+    position: relative;
+    width: 300px;
+    height: 70vh;
+    opacity: 0.9;
+    background-image: url(tinkel.png);
+    background-position: center;
+    background-size: 25vh;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: 3s;
+    }
+
+    #workshopImg{
+        width: 170px;
+        height: 200px;
+
+    }
+    #dropdownList{
+        display: none;
+        flex-direction: row;
+    }
+    .services{
+    text-align: center;
+    justify-content: center;
+    background: var(--second-bg-color);
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+    
+   .column{
+     width: 400px;
+
+   }
+
+    
 }
