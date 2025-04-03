@@ -98,7 +98,7 @@ body a{
 
 .home{
     
-    background-image: url(background.jpg);
+    background-image: url("https://storage.cloud.google.com/profilesbucket/background.jpg" );
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
