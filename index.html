@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tinkel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="nav-top">
             <div class="logo-name">
-                <h2>TINKEL ENGINEERING COMPANY</h2>
+                <h2>TINKEL </h2>
             </div>
+            <div>
+                <!--
             <div class="menu-icon">
-                <img src="/icons/menu_icon.png" alt="">
+                <img src="/listdown.svg" alt="" id="menuBtn">
             </div>
-            <div class="nav-btns">
+            -->
+            <div class="nav-btns" id="dropdownList">
                     
                 <a href="#home "class='scroll'>Home</a>
                 <a href="#services "class='scroll'>Services</a>
-                <a href="#contact "class='scroll'>Contact</a>
                 <a href="#about "class='scroll'>About</a>
+                <a href="#values "class='scroll'>Values</a>
 
             </div>
+
+
+            </div>
+
         </nav>
     </header>
     <div class="container-section">
@@ -30,23 +37,24 @@
     <section class=" home  section" id="home">
         
         <div class="headings"> 
-            <div class="profile-heading">
-              <h1>Engineering Company <span> Tinkel</span></h1>
-
-            </div>
+            <div class="heading-title">
+                
             <div class="text-animate">
-               <h2> Mechanical Engineering</h2>
+               <h2> TINKEL engineering company</h2>
             </div>
-            <div>
-
+            
+            <div class="title">
+<p>Metal fabrication ,Line Boring ,Pulley and Roller Fabrication Gearbox and Pump Servicing and Repair , Hydraulic Components supply and repair Plant installations and Spares, General Machining</p>
+            </div>
+            
             </div>
 
-            <p>Metal fabrication ,Line Boring ,Pulley and Roller Fabrication Gearbox and Pump Servicing and Repair , Hydraulic Components supply and repair Plant installations and Spares, General Machining</p>
-
-
-            <div>
-                <p>"We are fll-service mechanical contractor committed to providing solutions fo the lifetime of your facility .Our innovative thinkers and expert collaborators will help your facility to evolve thought generations"</p>
+            
+        
+            <div class="background-img">
+                
             </div>
+
                <!----
             <div class="heading-nav-btns">
                 <a href="#" class="btns">Hire Me</a>
@@ -54,10 +62,37 @@
             </div>
 -->
         </div>
+
         
-            <div class="background-img">
-                
+            <div>
+    
+
+
+
+                <div class="qoutes-wrapper">
+            <div class="company-quotes">
+                <div class="about-company">
+                <p id="about-company">"We are full-service mechanical contractor committed to providing solutions fo the lifetime of your facility .Our innovative thinkers and expert collaborators will help your facility to evolve thought generations"</p>
+                </div>
+                <div class="img-wrapper">
+                    <div>
+                         <img src="./workshop.png" width="400" height="300" alt="" id="workshopImg">
+                         </div>
+
+                <div class="about-company-2"> 
+            
+                    <p id="about-company-2">"we focus on improving your total ownership through maintenance ,metal fabrication and machining .Our priority is to support your mission today , and your vision tomorrow "</p>
             </div>
+
+            </div>
+                </div>
+
+
+
+            </div>
+
+
+</div>
 
             
             
@@ -70,6 +105,7 @@
         </div>
 
         <div class="service fabrication">
+
             <h2 class="serviceHead">Fabrication</h2>
 
         <div class="row">
@@ -77,16 +113,25 @@
 
             <div class="column">
                 <h3>Fabrication of pulleys/rollers</h3>
+                <div class="column-contents">
+                    <img src="./foodprocessing.jpg" alt="" id="column-image">
+                <div>
                <p>Mining</p>
                <p>Food processing (stainless steel)</p>
-            
+            </div>
+            </div>
             </div>
             <div class="column">
                 <h3>Pipe Welding</h3>
-                
+                <div class="column-contents">
+                    <img src="./welding.jpg" alt="" id="column-image">
+
+                    <div>
                 <p>Tig welding</p>
                 <p>C0  welding</p>
                 <p>Ammonia plant welding</p>
+                </div>
+                </div>
 
             </div>
                      
@@ -95,10 +140,15 @@
         <div class="row">
             <div class="lastColumn">
                 <h3>General Fabrication</h3>
-                
+                <div class="column-contents"> 
+                     <img src="./stainless.jpg" alt="" id="column-image">
+                    
+                    <div>
                 <p>Fabrication of chutes , hoopers & liners</p>
                 <p>Design and fabrication of screw conveyors</p>
                 <p>Walkways & platforms</p>
+                </div>
+                </div>
             </div>
             </div>
 
@@ -114,15 +164,30 @@
             
             <div class="column">
                 <h3>General Machining</h3>
+
+                <div class="column-contents" >
+                    <img src="./shaft.jpg" alt=""id="column-image" >
+                    <div>
+
+                    
                 
                 <p>Machining of shafts, sleeves , bushes & pins</p>
                 <p>Machining of sprockets & gears </p>
+                </div>
+                </div>
             </div>
                         
             <div class="column">
                 <h3>Line boring</h3>
                 
+                <div class="column-contents" >
+                    <img src="./dogframe.jpg" alt=""id="column-image" >
+                    <div>
+
+                
                 <p>Recondition of buckets ,H-frame and Dog-Bone</p>
+                </div>
+                </div>
             </div>
 
             
@@ -141,12 +206,16 @@
             
             <div class="column">
                 <h3>Service of Industrial gearboxes</h3>
-                
-                
+                <div class="column-contents"  >
+                       <img src="./gearbox.jpg" alt=""id="column-image" >
+                <div>
                 <p>Radicon Gearbox</p>
                 <p>Ferner Gearbox </p>
                 <p>Sew Gearbox </p>
                 <p>Bonfiglioli Gearbox </p>
+                </div>
+                </div>
+                
                 </div>
 
                 
@@ -174,19 +243,34 @@
             
             <div class="column">
                 <h3>Supply of hydraulic & peneumatic components</h3>
-                
+                <div class="column-contents">
+                    <img src="./hydraulics.jpg" alt="" id="column-image" >
+                    
+                <div>
                 
                 <p>Fitting and hoses</p>
                 <p>Hydraulic & Pneumatic valves </p>
                 <p>Supply of hydraulic and pneumatic auxilaries  </p>
                 </div>
+
+                </div>
+                
+
+                </div>
                 
             <div class="column">
                 <h3>Repair of hydraulic & pneumatic components</h3>
+                <div class="column-contents" >
+                    <img src="./hyraulicylinder.jpg" alt="" id="column-image" >
+
+                    
+                <div>
                 
                 <p>Repair of Hydraulic Cylinders</p>
                 <p>Repair of Pneumatic Cylinders</p>
                 <p>Repair of valves & pumps</p>
+                </div>
+                </div>
             </div>
             </div>
             
@@ -202,11 +286,17 @@
             
             <div class="column">
                 <h3>Plant installations</h3>
+                <div class="column-contents" > 
+                    <img src="./conveyor.jpg" alt="" id="column-image" >
+
                 
                 
+                <div>
                 <p>Conveyor structures</p>
                 <p>Steel structures</p>
                 <p>Platforms </p>
+                </div>
+</div>
                 </div>
             
             <div class="column">
@@ -233,6 +323,10 @@
             
             <div class="column">
                 <h3>Fixed Plant Spares</h3>
+                <div class="column-contents" >
+                        <img src="./sprockets.jpg" alt="" id="column-image" >
+
+                <div>
                 
                 
                 <p>Bearing</p>
@@ -241,15 +335,21 @@
                 <p>Vee belts</p>
                 <p>Rollers</p>
                 </div>
+                </div>
+                </div>
             
             <div class="column">
                 <h3>Mobile Plant Spares</h3>
-                
+<div  class="column-contents">
+  <img src="./pipes.jpg" alt="" id="column-image" >
+                <div>
                 
                 <p>CAT Spares</p>
                 <p>Bell Spares</p>
                 <p>Volvo Spares</p>
                 <p>Chinese Equipment  Spares</p>
+                </div>
+                </div>
                 </div>
 
             </div>
@@ -277,8 +377,53 @@
     </section>
     --->
     
-        
     <section class="section about Values" id="about">
+            <h2 class="about-heading">
+                About Us
+            </h2>
+
+            <div class="about-img">
+                <img src="tinkel.png" height="100" width="100" alt="#">
+                
+
+            </div>
+
+        <div class="about-content">
+            
+            <div class="location">
+                <img src="./location.svg" alt="#">
+                <div>
+                <p><address>10 George Drive , Msasa</address></p>
+                <p>Harare , Zimbabwe</p>
+                </div>
+            </div>
+                        
+            <div class="call">
+                
+                <img src="./call.svg" alt="#">
+                <div>
+                <p>+263 719 110 924</p>
+                </div>
+            </div>
+   
+            <div class="email">
+                <img src="./email.svg" alt="#">
+                <p>sales@tinkel.co.zw</p>
+            </div>
+                 <!---     
+            <div class="whatsapp">
+                <img src="./whatsapp.svg" alt="#">
+
+                <p><address>10 George Drive , Msasa</address></p>
+                <p>Harare , Zimbabwe</p>
+            </div>
+-->  
+
+        </div>
+
+    </section>
+        
+    <section class="section  values" id="values">
             <h2 class="about-heading">
                 Our  <span>Values</span>
             </h2>
@@ -311,42 +456,11 @@
     </section>
     
         
-    <section class="section about Values" id="about">
-            <h2 class="about-heading">
-                About  <span>us</span>
-            </h2>
-
-            <div class="about-img">
-                <img src="icons/profile-img.jpg" alt="#">
                 
-                <span class="circle-spin"></span>
-
-            </div>
-
-        <div class="about-content">
-            
-            <div class="location">
-                <img src="icons/location.png" alt="#">
-                <p><address>24 12th cres Warren Park 1</address></p>
-                <p></p>
-            </div>
-
-            <div>
-                <p>We are full</p>
-            </div>
-        </div>
-
-    </section>
-                
-    <footer class="footer-links">
-    
-            <div class="home-links">
-                <p>Social media</p>
-                <a href=""><img src="icons/facebook (1).png" alt="">facebook</a>
-                <a href=""><img src="icons/Gmail-Logo-PNG_dgr26z.png" alt="">Email</a>
-                <a href=""><img src="icons/whatsapp.png" alt="">whatsapp</a>
-
-            </div>
+    <footer>
+         <div class="footer">
+            <p>Developed by Tinodaishe Taderera</p>
+         </div>
 
     </footer>
 
