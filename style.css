@@ -548,7 +548,7 @@ span{
     width: 300px;
     height: 70vh;
     opacity: 0.9;
-    background-image: url(tinkel.png);
+    background-image: url(https://storage.cloud.google.com/profilesbucket/tinkel.png);
     background-position: center;
     background-size: 25vh;
     background-repeat: no-repeat;
