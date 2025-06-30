@@ -99,7 +99,8 @@ body a{
 
 }
 .title{
-    color: white;
+    color:  white;
+    font-weight: bolder;
 }
 .profile-heading{
     font-size: 2rem;
@@ -111,10 +112,10 @@ body a{
 #menuBtn{
     display: none;
 }
-
+/*"https://storage.cloud.google.com/profilesbucket/background.jpg" */
 .home{
     
-    background-image: url("https://storage.cloud.google.com/profilesbucket/background.jpg" );
+    background-image: url(https://storage.googleapis.com/maishopbucket1/background1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -562,7 +563,7 @@ span{
 
 
 }
-
+/*https://storage.cloud.google.com/profilesbucket/tinkel.png*/
     .background-img{
         
     position: relative;
